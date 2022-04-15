@@ -1,0 +1,265 @@
+Algoritmo Rent_Car
+	
+	//Variables
+	definir licencia Como Entero; // Licencia
+	definir nom Como Caracter; // Nombre del cliente
+	Definir  noLi Como Entero; // Numero de licencia
+	definir vr Como Entero; //Vehiculo a rentar
+	
+	//Datos de vehiculo
+	//Toyota Camry
+	not="Toyota Camry";
+	at<-2020;
+	ct="Negro";
+	mt="A4JJG87"
+	pt<-500;
+	
+	//Jeep
+	noj="Jeep";
+	aj<-2009;
+	cj="Blanco";
+	mj="G433KII8";
+	pj<-600;
+	
+	//Honda
+	noh="Honda Civic";
+	ah<-2022;
+	ch="Azul";
+	mh="JK901JG";
+	ph<-1500
+	
+	//Honda CRV
+	noc="Honda Crv";
+	ac<-2003;
+	cc="Gris";
+	mc="JK9019G";
+	pc<-400
+	
+	//4Runner
+	nor="Toyota 4Runner";
+	ar<-2022;
+	cr="Rojo";
+	mr="JK901JG";
+	pr<-2500
+	
+	//Datos del programa
+	Escribir "--------------------------------------------"
+	Escribir "-               RentCarSoft                -"
+	Escribir "- Software de gestion de renta de vehiculo -"
+	Escribir "-         Desarrollado por DreamSoft       -"
+	Escribir "-    Propietario: Josè David Muñoz Perez   -"
+	Escribir "-        Matricula: 21-EIIN-1-053          -"
+	Escribir "--------------------------------------------"
+	Escribir " "
+	Escribir " "
+	
+	Escribir "¿Posee Licencia vigente?"
+	Escribir "1 = (SI) // 0 = (NO)"
+	Leer licencia
+	
+	
+	
+	Si licencia=1 Entonces
+		Escribir " "
+		Escribir " *** Datos Cliente ***"
+		Escribir "Nombre Cliente: "
+		Leer nom
+		Escribir "Nº de Licencia"
+		Leer noLi
+		Escribir ""
+		
+		Limpiar Pantalla
+		Escribir " -------------------- ";
+		Escribir "Vehiculo a Rentar"
+		Escribir " -------------------- ";
+		Escribir " ";
+		Escribir "Lista de Vehiculo"
+		Escribir "1 - Toyota Camry";
+		Escribir "2 - Jeep";
+		Escribir "3 - Honda Civic";
+		Escribir "4 - Honda Crv";
+		Escribir "5 - 4Runner";
+		
+		leer vr
+		Segun vr Hacer
+			1:
+				Escribir "Ha elegido: ",not
+				Escribir 'Año: ',at;
+				Escribir 'Color: ',ct;
+				Escribir 'Matricula: ',mt;
+				Escribir 'Precio por dìa: ',pt;
+				Escribir "¿Cuantos dìas desea rentarlo?";
+				leer d;
+			2:
+				Escribir "Ha elegido: ",noj
+				Escribir 'Año: ',aj;
+				Escribir 'Color: ',cj;
+				Escribir 'Matricula: ',mj;
+				Escribir 'Precio por dìa: ',pj;
+				Escribir "¿Cuantos dìas desea rentarlo?";
+				leer d;
+			3: 
+				Escribir "Ha elegido: ",noh;
+				Escribir 'Año: ',ah;
+				Escribir 'Color: ',ch;
+				Escribir 'Matricula: ',mh;
+				Escribir 'Precio por dìa: ',ph;
+				Escribir "¿Cuantos dìas desea rentarlo?";
+				leer d;
+			4: 
+				Escribir "Ha elegido: ",noc
+				Escribir 'Año: ',ac;
+				Escribir 'Color: ',cc;
+				Escribir 'Matricula: ',mc;
+				Escribir 'Precio por dìa: ',pc;
+				Escribir "¿Cuantos dìas desea rentarlo?";
+				leer d;
+			5:
+				Escribir "Ha elegido: ",nor;
+				Escribir 'Año: ',ar;
+				Escribir 'Color: ',cr;
+				Escribir 'Matricula: ',mr;
+				Escribir 'Precio por dìa: ',pr;
+				Escribir "¿Cuantos dìas desea rentarlo?";
+				leer d;
+			De Otro Modo:
+				Escribir "No poseemos màs vehiculos."
+		Fin Segun
+		
+		Escribir "¿Desea rentar este vehiculo?";
+		Escribir "1 = SI & 2 = NO"
+		Leer dr
+		Mientras dr <> 1 Hacer
+			Limpiar Pantalla
+			Escribir " --------------------- ";
+			Escribir " - Vehiculo a Rentar - ";
+			Escribir " --------------------- ";
+			Escribir " ";
+			Escribir "Lista de Vehiculo"
+			Escribir "1 - Toyota Camry";
+			Escribir "2 - Jeep";
+			Escribir "3 - Honda Civic";
+			Escribir "4 - Honda Crv";
+			Escribir "5 - 4Runner";
+			
+			leer vr
+			Segun vr Hacer
+				1:
+					Escribir "Ha elegido: ",not
+					Escribir 'Año: ',at;
+					Escribir 'Color: ',ct;
+					Escribir 'Matricula: ',mt;
+					Escribir 'Precio por dìa: ',pt;
+					Escribir "¿Cuantos dìas desea rentarlo?";
+					leer d;
+				2:
+					Escribir "Ha elegido: ",noj
+					Escribir 'Año: ',aj;
+					Escribir 'Color: ',cj;
+					Escribir 'Matricula: ',mj;
+					Escribir 'Precio por dìa: ',pj;
+					Escribir "¿Cuantos dìas desea rentarlo?";
+					leer d;
+				3: 
+					Escribir "Ha elegido: ",noh;
+					Escribir 'Año: ',ah;
+					Escribir 'Color: ',ch;
+					Escribir 'Matricula: ',mh;
+					Escribir 'Precio por dìa: ',ph;
+					Escribir "¿Cuantos dìas desea rentarlo?";
+					leer d;
+				4: 
+					Escribir "Ha elegido: ",noc
+					Escribir 'Año: ',ac;
+					Escribir 'Color: ',cc;
+					Escribir 'Matricula: ',mc;
+					Escribir 'Precio por dìa: ',pc;
+					Escribir "¿Cuantos dìas desea rentarlo?";
+					leer d;
+				5:
+					Escribir "Ha elegido: ",nor;
+					Escribir 'Año: ',ar;
+					Escribir 'Color: ',cr;
+					Escribir 'Matricula: ',mr;
+					Escribir 'Precio por dìa: ',pr;
+					Escribir "¿Cuantos dìas desea rentarlo?";
+					leer d;
+				De Otro Modo:
+					Escribir "No poseemos màs vehiculos."
+			Fin Segun
+		Fin Mientras
+		
+		definir p Como Entero;
+		Escribir "¿Desea ver el resumen de su pedido?"
+		Escribir "1 para SI o 0 para NO"
+		Leer p
+		
+		Si p=1 Entonces
+			Limpiar Pantalla
+			Escribir "--------------------------------------------"
+			Escribir "-               Rent Car Soft              -"
+			Escribir "- Software de gestion de renta de vehiculo -"
+			Escribir "-            Detalle de Pedido             -"
+			Escribir "--------------------------------------------"
+			Escribir " "
+			Escribir "Datos de Cliente: ",nom;
+			Escribir "Licencia del Cliene: ",noLi;
+			Escribir "Carro Rentado: ",vr;
+			Escribir ""
+			Escribir "--------------------------------------------"
+			Escribir "-            Detalle de Vehiculo           -"
+			Escribir "--------------------------------------------"
+			
+			Si vr=1 Entonces
+				Escribir "Vehiculo: ",not;
+				Escribir 'Año: ',at;
+				Escribir 'Color: ',ct;
+				Escribir 'Matricula: ',mt;
+				Escribir 'Precio por dìa: ',pt;
+				t<-pt*d;
+				Escribir "Precio total: ",t;
+				
+			FinSi
+			Si vr=2 Entonces
+				Escribir "Ha elegido: ",noj
+				Escribir 'Año: ',aj;
+				Escribir 'Color: ',cj;
+				Escribir 'Matricula: ',mj;
+				Escribir 'Precio por dìa: ',pj;
+				t<-pj*d;
+				Escribir "Precio total: ",t;
+			FinSi
+			Si vr=3 Entonces
+				Escribir "Ha elegido: ",noh
+				Escribir 'Año: ',ah;
+				Escribir 'Color: ',ch;
+				Escribir 'Matricula: ',mh;
+				Escribir 'Precio por dìa: ',ph;
+				t<-ph*d;
+				Escribir "Precio total: ",t;
+			FinSi
+			Si vr=4 Entonces
+				Escribir "Ha elegido: ",noc;
+				Escribir 'Año: ',ac;
+				Escribir 'Color: ',cc;
+				Escribir 'Matricula: ',mc;
+				Escribir 'Precio por dìa: ',pc;
+				t<-pc*d;
+				Escribir "Precio total: ",t;
+			FinSi
+			Si vr=5 Entonces
+				Escribir "Ha elegido: ",nor
+				Escribir 'Año: ',ar;
+				Escribir 'Color: ',cr;
+				Escribir 'Matricula: ',mr;
+				Escribir 'Precio por dìa: ',pr;
+				t<-pr*d;
+				Escribir "Precio total: ",t;
+			FinSi
+		SiNo
+			Escribir "Pedido ha sido procesado, imprimiendo..."
+		Fin Si
+	SiNo
+		Escribir "No podemos rentarle un vehiculo."
+	Fin Si
+FinAlgoritmo
